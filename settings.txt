@@ -1,0 +1,16 @@
+{"site_url":"http://localhost:5000",
+"site_title": "Сборник интерактивных уроков по английскому языку",
+"description": "Английский для основной школы",
+"keywords": "Эффективные уроки английского языка",
+"name": "Сборник интерактивных уроков",
+"tag1":"по английскому языку для основной школы",
+"sect1":"Главная",
+"sect2":"Об учебниках",
+"sect3":"Дополнительные материалы",
+"sect4":"Открыть сборник",
+"sect5":"Контакты",
+"telegram":"https://t.me/malltsseva",
+"vk":"https://vk.com/nmalltseva",
+"email":"mailto:nastyamaltseva2015yandex.ru@mail.ru",
+"city":"Курск"
+}

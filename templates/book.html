@@ -1,0 +1,30 @@
+{% block book %}
+  <!-- ======= секция книги======= -->
+  <section id="book" class="portfolio">
+    <div class="container">
+      <div class="section-title">
+        <h2></h2>
+        <p>Spotlight 5 класс</p>
+      </div>
+
+      <div class="row portfolio-container">
+        {% block content %}
+        {% for post in posts %}
+        <div class="col-lg-4 col-md-6 portfolio-item {{ post.tag }}">
+          <div class="portfolio-wrap">
+            <img src="static/img/back-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4><a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}" data-gallery="blogDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox">{{ post.title }}</a></h4>
+              <p>{{ post.description }}</p>
+              <div class="portfolio-links">
+                <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}" data-gallery="blogDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox"><i class="bx bx-caret-down-circle" style="padding-top: 15px"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        {% endblock %}
+</div>
+    </div>
+  </section><!-- конец секции -->
+{% endblock %}
